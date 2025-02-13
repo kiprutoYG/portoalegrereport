@@ -27,10 +27,10 @@ export default function Discussion() {
   return (
     <section id="discussion" className="py-16 bg-acc bg-opacity-30">
       <div className="max-w-screen-xl mx-auto px-6">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center lg:pb-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-center lg:pb-6">
           Discussion
         </h2>
-        <p className="mt-4 text-lg text-gray-700">
+        <p className="mt-4 text-lg">
         The results reveal systemic failures in balancing de
         velopment with ecological and hydrological realities.
         </p>

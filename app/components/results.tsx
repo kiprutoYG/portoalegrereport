@@ -20,7 +20,7 @@ export default function Results() {
   return (
     <section id="results" className="py-16 bg-sec bg-opacity-40">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center pb-6 xs:pb-3">
+        <h2 className="text-2xl md:text-4xl font-bold text-center pb-6 xs:pb-3">
           Results
         </h2>
         <h3 className="font-bold text-lg p-2 md:text-xl">Total flood extent:</h3>
@@ -56,11 +56,11 @@ export default function Results() {
         {/* Before & After Flood Images */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 pt-3">
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-gray-900 p-3">Before Flood</h3>
+            <h3 className="text-xl font-semibold p-3">Before Flood</h3>
             <Image src={beforeflood} alt="Before Flood" width={500} height={300} className="rounded-lg shadow-lg mx-auto" />
           </div>
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-gray-900 p-3">After Flood</h3>
+            <h3 className="text-xl font-semibold p-3">After Flood</h3>
             <Image src={afterflood} alt="After Flood" width={500} height={300} className="rounded-lg shadow-lg mx-auto" />
           </div>
         </div>
@@ -68,18 +68,18 @@ export default function Results() {
         {/* Flood Extent & Permanent Water Masking Images */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-gray-900 p-3">Flood Extent</h3>
+            <h3 className="text-xl font-semibold p-3">Flood Extent</h3>
             <Image src={flooded} alt="Flood Extent" width={500} height={300} className="rounded-lg shadow-lg mx-auto" />
           </div>
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-gray-900 p-3">Permanent Water</h3>
+            <h3 className="text-xl font-semibold p-3">Permanent Water</h3>
             <Image src={permwater} alt="Permanent Water Masking" width={500} height={300} className="rounded-lg shadow-lg mx-auto" />
           </div>
         </div>
 
         {/* Pie Chart for Impact Assessment */}
         <div className="mt-10 text-center">
-          <h3 className="text-xl font-semibold text-gray-900 p-3">Impact Assessment</h3>
+          <h3 className="text-xl font-semibold p-3">Impact Assessment</h3>
           <Image src={piechart} alt="Impact on land uses" width={500} height={300} className="rounded-lg shadow-lg mx-auto" />
         </div>
       </div>

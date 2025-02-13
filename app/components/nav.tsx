@@ -6,7 +6,6 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
-    //toggle dark mode
     
     return (
         <nav className="bg-white shadow-md fixed w-full top-0 z-50">
