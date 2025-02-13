@@ -7,7 +7,7 @@ export default function Hero() {
     const [showAbstract, setShowAbstract] = useState(false);
     const [showIntroduction, setShowIntroduction] = useState(false);
   return (
-    <section className="relative w-full h-screen flex items-center justify-center text-center bg-gray-900">
+    <section id="home" className="relative w-full h-screen flex items-center justify-center text-center bg-gray-900">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -22,7 +22,7 @@ export default function Hero() {
 
       {/* Overlay Content */}
       <div className="relative z-10 px-6 md:px-12 text-white max-w-4xl">
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+        <h1 className="xs:text-2xl text-3xl md:text-5xl font-bold leading-tight align-middle">
           Flood Mapping & Analysis Report
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-200">

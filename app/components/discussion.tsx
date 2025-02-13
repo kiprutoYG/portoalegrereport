@@ -25,12 +25,12 @@ export default function Discussion() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="discussion" className="py-16 bg-white dark:bg-gray-900">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center">
+    <section id="discussion" className="py-16 bg-acc bg-opacity-30 dark:bg-gray-900">
+      <div className="max-w-screen-xl mx-auto px-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white text-center lg:pb-6">
           Discussion
         </h2>
-        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 text-center">
+        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
         The results reveal systemic failures in balancing development with ecological and hydrological realities.
         </p>
 
@@ -56,14 +56,6 @@ export default function Discussion() {
             </div>
           ))}
         </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center pt-16">
-          Conclusion
-        </h2>
-        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 text-center">
-        The 2024 Porto Alegre flood was a manifestation of ignored warnings and unsustainable land use. 
-        Croplands and wetlands bore the brunt, but urban disruptions revealed deeper governance gaps. 
-        This study provides a replicable framework for integrating satellite data, hydrological indices, and land cover analytics to guide adaptive planning.
-        </p>
       </div>
     </section>
   );

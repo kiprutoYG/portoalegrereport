@@ -10,9 +10,9 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section id="tools" className="py-16 bg-gray-100 dark:bg-gray-900">
+    <section id="data" className="py-16 bg-sec bg-opacity-40 dark:bg-gray-900">
       <div className="max-w-screen-xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white">
           Data & Analytical Tools
         </h2>
         <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">

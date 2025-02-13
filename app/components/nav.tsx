@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 
 
@@ -8,28 +8,15 @@ export default function Navbar() {
     const [darkMode, setDarkMode] = useState(false);
 
     //toggle dark mode
-    useEffect(() => {
-        if (darkMode) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    })
-
+    
     return (
         <nav className="bg-white dark:bg-gray-900 shadow-md fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-              FloodReport
-            </h1>
-          </div>
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 md:h-32">
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
-            {["Home", "Methodology", "Results", "Maps", "Reports"].map((item) => (
+          <div className="hidden md:flex space-x-6 md:p-8">
+            {["Home", "Data", "Methodology", "Results", "Discussion"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -64,7 +51,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-800 py-4">
-          {["Home", "Methodology", "Results", "Maps", "Reports"].map((item) => (
+          {["Home", "Data", "Methodology", "Results", "Discussion"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
