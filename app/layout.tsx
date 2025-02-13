@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto, Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
  
 const roboto = Roboto({
@@ -8,11 +8,6 @@ const roboto = Roboto({
   display: 'swap',
 });
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
 
 
 export const metadata: Metadata = {
