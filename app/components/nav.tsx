@@ -1,11 +1,10 @@
 "use client";
 import { useState } from "react";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [darkMode] = useState(false);
 
     //toggle dark mode
     
@@ -29,13 +28,6 @@ export default function Navbar() {
 
           {/* Icons */}
           <div className="flex items-center space-x-4">
-            {/* Dark Mode Toggle */}
-            <button
-              className="text-gray-600 hover:text-gray-900 transition"
-            >
-              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-
             {/* Mobile Menu Button */}
             <button
               className="md:hidden text-gray-600"
