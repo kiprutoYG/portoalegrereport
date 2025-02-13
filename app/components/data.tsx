@@ -15,7 +15,7 @@ export default function Tools() {
         <h2 className="text-2xl md:text-4xl font-bold ">
           Data & Analytical Tools
         </h2>
-        <p className="mt-4 text-lg text-gray-700 ">
+        <p className="mt-4 text-lg">
           The flood mapping project leverages cutting-edge geospatial datasets and analytical tools.
         </p>
 
