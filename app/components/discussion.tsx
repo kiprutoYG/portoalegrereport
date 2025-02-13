@@ -25,31 +25,32 @@ export default function Discussion() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="discussion" className="py-16 bg-acc bg-opacity-30 dark:bg-gray-900">
+    <section id="discussion" className="py-16 bg-acc bg-opacity-30">
       <div className="max-w-screen-xl mx-auto px-6">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white text-center lg:pb-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center lg:pb-6">
           Discussion
         </h2>
-        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
-        The results reveal systemic failures in balancing development with ecological and hydrological realities.
+        <p className="mt-4 text-lg text-gray-700">
+        The results reveal systemic failures in balancing de
+        velopment with ecological and hydrological realities.
         </p>
 
         {/* Collapsible Discussion Points */}
         <div className="mt-10 space-y-4">
           {discussionPoints.map((point, index) => (
-            <div key={index} className="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
+            <div key={index} className="border border-gray-300 rounded-lg overflow-hidden">
               {/* Title Bar */}
               <button
-                className="w-full flex justify-between items-center px-6 py-4 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
+                className="w-full flex justify-between items-center px-6 py-4 bg-gray-300 hover:bg-gray-300 transition"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="text-lg font-semibold text-gray-900 dark:text-white">{point.title}</span>
-                {openIndex === index ? <ChevronUp className="text-gray-700 dark:text-gray-300" /> : <ChevronDown className="text-gray-700 dark:text-gray-300" />}
+                <span className="text-lg font-semibold text-gray-900">{point.title}</span>
+                {openIndex === index ? <ChevronUp className="text-gray-700" /> : <ChevronDown className="text-gray-700" />}
               </button>
 
               {/* Content (Collapsible) */}
               {openIndex === index && (
-                <div className="p-4 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300">
+                <div className="p-4 bg-white text-gray-700">
                   {point.content}
                 </div>
               )}

@@ -25,12 +25,12 @@ const steps = [
 
 export default function Methodology() {
   return (
-    <section id="methodology" className="py-16 bg-sec bg-opacity-30 dark:bg-gray-900">
+    <section id="methodology" className="py-16 bg-sec bg-opacity-30">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900  ">
           Methodology
         </h2>
-        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
+        <p className="mt-4 text-lg text-gray-700">
           Our flood mapping approach follows a structured workflow.
         </p>
 
@@ -39,14 +39,14 @@ export default function Methodology() {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center">
               {/* Step Box */}
-              <div className="bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg w-80 md:w-96 lg:w-1/2 text-center">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{step.title}</h3>
-                <p className="mt-2 text-gray-700 dark:text-gray-300 text-sm md:text-lg">{step.description}</p>
+              <div className="bg-gray-100 shadow-lg p-6 rounded-lg w-80 md:w-96 lg:w-1/2 text-center">
+                <h3 className="text-xl font-semibold text-gray-900">{step.title}</h3>
+                <p className="mt-2 text-gray-700 text-sm md:text-lg">{step.description}</p>
               </div>
 
               {/* Arrow (Except for Last Step) */}
               {index < steps.length - 1 && (
-                <span className="text-3xl text-gray-500 dark:text-gray-400 mt-2">
+                <span className="text-3xl text-gray-500 mt-2">
                   ↓
                 </span>
               )}

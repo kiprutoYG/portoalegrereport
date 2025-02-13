@@ -10,22 +10,22 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section id="data" className="py-16 bg-sec bg-opacity-40 dark:bg-gray-900">
+    <section id="data" className="py-16 bg-sec bg-opacity-40">
       <div className="max-w-screen-xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 ">
           Data & Analytical Tools
         </h2>
-        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
+        <p className="mt-4 text-lg text-gray-700 ">
           The flood mapping project leverages cutting-edge geospatial datasets and analytical tools.
         </p>
 
         {/* Tools Grid */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {tools.map((tool, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 shadow-lg p-6 rounded-lg flex flex-col items-center">
-              <div className="text-blue-600 dark:text-blue-400">{tool.icon}</div>
-              <h3 className="mt-4 text-xl font-semibold text-gray-900 dark:text-white lg:text-2xl">{tool.name}</h3>
-              <p className="mt-2 text-gray-700 dark:text-gray-300 text-sm text-center lg:text-lg">
+            <div key={index} className="bg-white  shadow-lg p-6 rounded-lg flex flex-col items-center">
+              <div className="text-blue-600 ">{tool.icon}</div>
+              <h3 className="mt-4 text-xl font-semibold text-gray-900  lg:text-2xl">{tool.name}</h3>
+              <p className="mt-2 text-gray-700 text-sm text-center lg:text-lg">
                 {tool.description}
               </p>
             </div>

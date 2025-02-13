@@ -5,12 +5,12 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode] = useState(false);
 
     //toggle dark mode
     
     return (
-        <nav className="bg-white dark:bg-gray-900 shadow-md fixed w-full top-0 z-50">
+        <nav className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 md:h-32">
 
@@ -20,7 +20,7 @@ export default function Navbar() {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-gray-800 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition"
+                className="text-gray-800 hover:text-blue-500 transition"
               >
                 {item}
               </a>
@@ -31,15 +31,14 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             {/* Dark Mode Toggle */}
             <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition"
+              className="text-gray-600 hover:text-gray-900 transition"
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-gray-600 dark:text-gray-300"
+              className="md:hidden text-gray-600"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -50,12 +49,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-800 py-4">
+        <div className="md:hidden bg-white">
           {["Home", "Data", "Methodology", "Results", "Discussion"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-100 "
               onClick={() => setIsOpen(false)}
             >
               {item}
