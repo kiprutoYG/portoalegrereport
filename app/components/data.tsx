@@ -12,7 +12,7 @@ export default function Tools() {
   return (
     <section id="data" className="py-16 bg-sec bg-opacity-40">
       <div className="max-w-screen-xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 ">
+        <h2 className="text-2xl md:text-4xl font-bold ">
           Data & Analytical Tools
         </h2>
         <p className="mt-4 text-lg text-gray-700 ">

@@ -27,10 +27,10 @@ export default function Methodology() {
   return (
     <section id="methodology" className="py-16 bg-sec bg-opacity-30">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900  ">
+        <h2 className="text-2xl md:text-4xl font-bold">
           Methodology
         </h2>
-        <p className="mt-4 text-lg text-gray-700">
+        <p className="mt-4 text-lg">
           Our flood mapping approach follows a structured workflow.
         </p>
 
