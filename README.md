@@ -13,15 +13,15 @@ A responsive and visually appealing web platform presenting the Porto Alegre rep
 - **Version Control:** Git & GitHub
 
 ## 📂 Project Structure
-├── public/
-│ ├── assets/ # Images and other static files
-├── src/
-│ ├── components/ # Reusable UI components
-│ ├── pages/ # Page sections
-│ ├── App.jsx # Main application file
-│ ├── index.css # Tailwind styles
-│ └── main.jsx # Entry point
-└── package.json
+- ├── public/
+- │ ├── assets/ # Images and other static files
+- ├── src/
+- │ ├── components/ # Reusable UI components
+- │ ├── pages/ # Page sections
+- │ ├── App.jsx # Main application file
+- │ ├── index.css # Tailwind styles
+- │ └── main.jsx # Entry point
+- └── package.json
 
 ## 🚀 Getting Started
 ### 1. Clone the repository
